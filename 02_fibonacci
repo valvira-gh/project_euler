@@ -1,0 +1,25 @@
+function fiboEvenSum(n) {
+    let sum = 0;
+    const MAX = n;
+    let num1 = 1;
+    let num2 = 2;
+    let fiboSum = 0;
+    console.log(`Num1: ${num1} + Num2: ${num2}`)
+    console.log(`...on yheensä: ${num1 + num2}`)
+
+    for (let i = 1; i < MAX; i++) {
+        // Luodaan fibonaccin lukujono
+        fiboSum = num1 + num2;
+        console.log('FiboSum:', fiboSum)
+        num1 = num2
+        console.log('Num1:', num1)
+        num2 = fiboSum
+        console.log('Num2:', num2)
+
+
+    }
+
+    return sum;
+}
+
+const finalSum = fiboEvenSum(10)
